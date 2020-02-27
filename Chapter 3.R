@@ -145,4 +145,11 @@ ggplot(data = mpg) +
 # data is usually verticly rectangle letting u fit more items if based off columns verse vertical
 
 #### 3.6 Geometric objects ####
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
 
+ggplot(data = mpg) + 
+  geom_smooth(mapping = aes(x = displ, y = hwy))
+
+ggplot(data = mpg) + 
+  geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv))
